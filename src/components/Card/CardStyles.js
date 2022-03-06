@@ -42,7 +42,9 @@ export const CardDice = styled.button`
   height: 60px;
   transition: box-shadow linear .3s;
 
-  &:hover {
-    box-shadow: 2px 2px 30px 30px ${(props) => props.theme.color.primary.neonGreenBlur};
+  @media (min-width: 1100px) {
+    &:hover {
+      box-shadow: 2px 2px 30px 30px ${(props) => props.theme.color.primary.neonGreenBlur};
+    }
   }
 `;

@@ -25,9 +25,9 @@ const Card = () => {
       <CardStyle>
         <CardTitle className="mb-10 mt-20">
           {" "}
-          ADVICE {`#${advice?.slip.id}`}
+          ADVICE {`#${advice?.slip.id ?? 0}`}
         </CardTitle>
-        <CardContent className="mb-30 mt-10">{advice?.slip.advice}</CardContent>
+        <CardContent className="mb-30 mt-10">{advice?.slip.advice ?? 'Loading...'}</CardContent>
         <div className="mb-40 mt-10">
           <picture>
             <source
